@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="https://lucky16.ugames.app/assets/icon/favicon.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-select.min.css">
+    <!-- icon css-->
+    <link rel="stylesheet" href="assets/elagent-icon/style.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/all.css">
+    <link rel="stylesheet" href="assets/niceselectpicker/nice-select.css">
+    <link rel="stylesheet" href="assets/font-size/css/rvfs.css">
+    <link rel="stylesheet" href="assets/animation/animate.css">
+    <link rel="stylesheet" href="assets/video/video-js.css">
+    <link rel="stylesheet" href="assets/tooltipster/css/tooltipster.bundle.css">
+    <link rel="stylesheet" href="assets/prism/prism.css">
+    <link rel="stylesheet" href="assets/prism/prism-coy.css">
+    <link rel="stylesheet" href="assets/magnify-pop/magnific-popup.css">
+    <link rel="stylesheet" href="assets/mcustomscrollbar/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Lucky 16: Play, share and earn</title>
+</head>
+
+<body class="doc full-width-doc sticky-nav-doc onepage-doc" data-spy="scroll" data-target=".navbar" data-offset="-120">
+    <div id="preloader">
+        <div id="ctn-preloader" class="ctn-preloader">
+            <div class="round_spinner">
+                <div class="spinner"></div>
+                <div class="text">
+                    <img src="https://lucky16.ugames.app/assets/imgs/littleIco.png" alt="">
+                    <h4><span>Lucky</span>16</h4>
+                </div>
+            </div>
+            <h2 class="head">Play, share and earn</h2>
+        
+        </div>
+    </div>
+
+    <div class="body_wrapper sticky_menu">
+        <nav class="navbar navbar-expand-lg menu_one" id="stickyTwo">
+            <div class="container-fluid pl-60 pr-60">
+                <a class="navbar-brand" href="index.html">
+                    <img src="https://lucky16.ugames.app/assets/imgs/lucky16yl.png"  alt="logo">
+                    <img src="https://lucky16.ugames.app/assets/imgs/lucky16yl.png"  alt="logo">
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="menu_toggle">
+                        <span class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                        <span class="hamburger-cross">
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent"  style="justify-content: space-around;">
+                    <ul class="navbar-nav menu">
+                        <li class="nav-item dropdown submenu active">
+                            <a href="#cose" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lucky16</a>
+                        </li>
+                        <li class="nav-item dropdown submenu">
+                            <a href="#rules" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Regole</a>
+                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false" data-toggle="dropdown"></i>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="v-pills-doc-tab" data-toggle="pill" href="#weekly" role="tab" aria-controls="v-pills-doc" aria-selected="true">Partite settimanali</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="v-pills-code-tab" data-toggle="pill" href="#pals" role="tab" aria-controls="v-pills-code" aria-selected="false">Pubblicazione palinsesto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="v-pills-layout-tab" data-toggle="pill" href="#guess" role="tab" aria-controls="v-pills-layout" aria-selected="false">Modifica dei pronostici</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="v-pills-tour-tab" data-toggle="pill" href="#notes" role="tab" aria-controls="v-pills-tour" aria-selected="false">Note</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown submenu">
+                            <a href="#" class="nav-link dropdown-toggle" href="#prizes" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Montepremi</a>
+                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false" data-toggle="dropdown"></i>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="v-pills-doc-tab" data-toggle="pill" href="#categories" role="tab" aria-controls="v-pills-doc" aria-selected="true">Prima categoria Lucky16</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="v-pills-code-tab" data-toggle="pill" href="#secondcat" role="tab" aria-controls="v-pills-code" aria-selected="false">Seconda categoria Lucky 15</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="v-pills-layout-tab" data-toggle="pill" href="#distribution" role="tab" aria-controls="v-pills-layout" aria-selected="false">Distribuzione montepremi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="v-pills-tour-tab" data-toggle="pill" href="#luckyrace" role="tab" aria-controls="v-pills-tour" aria-selected="false">Gara settimanale Lucky</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="v-pills-tour-tab" data-toggle="pill" href="#notes2" role="tab" aria-controls="v-pills-tour" aria-selected="false">Note importanti</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown submenu">
+                            <a href="#plans" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Piani</a>
+                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false" data-toggle="dropdown"></i>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="v-pills-doc-tab" data-toggle="pill" href="#plan1" role="tab" aria-controls="v-pills-doc" aria-selected="true">Silver</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="v-pills-code-tab" data-toggle="pill" href="#plan2" role="tab" aria-controls="v-pills-code" aria-selected="false">Gold</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="v-pills-layout-tab" data-toggle="pill" href="#plan3" role="tab" aria-controls="v-pills-layout" aria-selected="false">Platinum</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="v-pills-layout-tab" data-toggle="pill" href="#plan31" role="tab" aria-controls="v-pills-layout" aria-selected="false">Platinum 1</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="v-pills-layout-tab" data-toggle="pill" href="#plan32" role="tab" aria-controls="v-pills-layout" aria-selected="false">Platinum 2</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="v-pills-layout-tab" data-toggle="pill" href="#plan33" role="tab" aria-controls="v-pills-layout" aria-selected="false">Platinum 3</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown submenu">
+                            <a href="#" class="nav-link dropdown-toggle" href="#referal" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Network</a>
+                        </li>
+
+                        <li class="nav-item dropdown submenu">
+                            <a href="#" class="nav-link dropdown-toggle" href="#prelaunch" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Prelancio</a>
+                        </li>
+
+                        <li class="nav-item dropdown submenu">
+                            <a href="#" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Adesione</a>
+                        </li>
+
+                        <li class="nav-item dropdown submenu">
+                            <a href="#" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Token LK16</a>
+                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false" data-toggle="dropdown"></i>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" id="v-pills-code-tab" data-toggle="pill" href="#contract" role="tab" aria-controls="v-pills-code" aria-selected="false">Contratto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="v-pills-layout-tab" data-toggle="pill" href="#presale" role="tab" aria-controls="v-pills-layout" aria-selected="false">Presale</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="v-pills-layout-tab" data-toggle="pill" href="#pro" role="tab" aria-controls="v-pills-layout" aria-selected="false">Vantaggi per i detentori</a>
+                                </li>
+                            </ul>
+                        </li>
+                     
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="doc_documentation_area onepage_doc_area" id="sticky_doc">
+            <div class="overlay_bg"></div>
+            <div class="container-fluid pl-60 pr-60">
+                <div class="row doc-container">
+                    <div class="col-lg-3 col-xl-3 doc_mobile_menu doc-sidebar display_none">
+                        <aside class="doc_left_sidebarlist">
+                            <h3 class="nav_title">Sezioni principali</h3>
+                            <div class="scroll">
+                                <ul class="list-unstyled nav-sidebar doc-nav">
+                                    <li class="nav-item active">
+                                        <a href="#cose" class="nav-link"><img src="img/onepage-icon/smiles-icon.png" alt="">Cosa è Lucky16</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#rules" class="nav-link"><img src="img/side-nav/briefcase.png" alt="briefcase">Regole del gioco</a>
+                                        <ul class="list-unstyled dropdown_nav">
+                                            <li class="nav-item"><a href="#weekly" class="nav-link">Partite settimanali</a></li>
+                                            <li class="nav-item"><a href="#pals" class="nav-link">Pubblicazione palinsesto</a></li>
+                                            <li class="nav-item"><a href="#guess" class="nav-link">Modifica dei pronostici</a></li>
+                                            <li class="nav-item"><a href="#notes" class="nav-link">Note</a></li>
+                                        </ul>
+                                        <span class="icon">
+                                            <i class="icon_plus"></i>
+                                            <i class="icon_minus-06"></i>
+                                        </span>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#prizes" class="nav-link"><img src="img/side-nav/chat1.png" alt="">Montepremi</a>
+                                        <span class="icon">
+                                            <i class="icon_plus"></i>
+                                            <i class="icon_minus-06"></i>
+                                        </span>
+                                        <ul class="list-unstyled dropdown_nav">
+                                            <li class="nav-item"><a href="#categories" class="nav-link">Prima categoria Lucky16</a></li>
+                                            <li class="nav-item"><a href="#secondcat" class="nav-link">Seconda categoria Lucky15</a></li>
+                                            <li class="nav-item"><a href="#distribution" class="nav-link">Distribuzione montepremi</a></li>
+                                            <li class="nav-item"><a href="#luckyrace" class="nav-link">Gara settimanali Lucky</a></li>
+                                            <li class="nav-item"><a href="#notes2" class="nav-link">Note importanti</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#plans" class="nav-link"><img src="img/side-nav/document.png" alt="">Piani di adesione</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#referal" class="nav-link"><img src="img/side-nav/document2.png" alt="">Referal 7 livelli</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#prelaunch" class="nav-link"><img src="img/side-nav/book.png" alt="">Prelancio Lucky16</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#access" class="nav-link"><img src="img/side-nav/chat.png" alt="">Come accedere</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#LK16" class="nav-link"><img src="img/side-nav/coding.png" alt="">Token LK16</a>
+                                        <span class="icon">
+                                            <i class="icon_plus"></i>
+                                            <i class="icon_minus-06"></i>
+                                        </span>
+                                        <ul class="list-unstyled dropdown_nav">
+                                            <li class="nav-item"><a href="#contract" class="nav-link">Contratto</a></li>
+                                            <li class="nav-item"><a href="#presale" class="nav-link">Presale</a></li>
+                                            <li class="nav-item"><a href="#pro" class="nav-link">Vantaggi per i detentori</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#ex3" class="nav-link"><img src="img/side-nav/support.png" alt="">Example Item 03</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-lg-9 col-md-12">
+                        <div class="documentation_info" id="post">
+
+                            <article class="documentation_body shortcode_text doc-section" id="cose">
+                                <div class="shortcode_title">
+                                    <h2>Che cosa è Lucky 16</h2>
+                                    <p>La fortuna a portata di click!</p>
+                                </div>
+                                <p>Lucky16 è più di un semplice gioco di calcio: è un'esperienza coinvolgente che ti permette di esprimere la tua passione per lo sport   del calcio e di vincere premi entusiasmanti. Indovina i risultati delle partite selezionate settimanalmente e immergiti nell'emozione del calcio come mai prima d'ora.</p>
+                                <p>Ma c'è di più. Con Lucky16, hai l'opportunità di condividere questa esperienza unica con gli altri e guadagnare. Il nostro programma di referenze ti consente di coinvolgere amici, familiari e altri appassionati di calcio, espandendo la tua rete e guadagnando premi in denaro. Diventa un vero ambasciatore  e condividi l'emozione con gli altri.</p>
+                                <p>E c'è un altro aspetto che rende Lucky16 ancora più sorprendente: la tecnologia Web3 decentralizzata. La piattaforma è alimentata dalla blockchain, il che significa che tutto è trasparente e sicuro. I  premi sono immutabilmente registrati sulla blockchain, garantendo equità e sicurezza per tutti i partecipanti.</p>
+                                <p>Ma non è tutto. Con il nostro token di utilità LK16, puoi sfruttare appieno l'esperienza di Lucky16. Il token ti offre accesso a funzionalità esclusive, premi aggiuntivi e molto altro ancora. È la chiave per sbloccare opportunità uniche nella piattaforma e per rendere la tua esperienza ancora più gratificante.</p>
+                                <p>In breve, Lucky16 non è solo un gioco di calcio, ma un modo per vivere il calcio, vincere premi e connettersi con altri appassionati. Porta la tua passione per il calcio a un livello superiore, coinvolgi amici e familiari, goditi la tecnologia decentralizzata e sfrutta il potere del token LK16. Unisciti a noi in questa avventura, sfida il tuo istinto sportivo e scopri quanto può essere entusiasmante vincere su Lucky16.</p>
+                            </article>
+
+
+                            <div class="border_bottom"></div>
+
+
+                            <article class="documentation_body shortcode_text doc-section" id="rules">
+                                <div class="shortcode_title">
+                                    <h2>Regole del gioco</h2>
+                                </div>
+
+                                <div class="shortcode_info" id="weekly">
+                                    <h4 class="s_title">Partite Settimanali:</h4>
+
+                                    <p>Ogni settimana, verranno proposti 16 incontri di calcio. Ogni partita avrà tre possibili esiti: "1" indica la vittoria della squadra di casa, "2" indica la vittoria della squadra ospite e "X" indica un pareggio. La squadra di casa è quella a sinistra nella scheda, mentre quella ospite è a destra. </p>
+                                </div>
+
+                                <div class="shortcode_info" id="pals">
+                                    <h4 class="s_title">Pubblicazione del palinsesto:</h4>
+                                        
+                                    <p>Il programma degli incontri sarà pubblicato almeno 4 giorni prima del primo incontro. Verranno assegnati casualmente tutti e 16 i risultati. In questo periodo, gli utenti possono modificare i pronostici per ciascuna partita fino a 2 ore prima dell'inizio del primo incontro.</p>
+                                </div>
+
+                                <div class="shortcode_info" id="guess">
+                                    <h4 class="s_title">Modifica dei Pronostici: </h4>
+                                    <p>Spetta all'utente accedere e modificare i risultati delle partite secondo le proprie previsioni. Se l'utente non apporta modifiche entro la chiusura del gioco, parteciperà comunque al concorso con i risultati assegnati casualmente.</p>
+                                </div>
+
+                                <blockquote class="media notice notice-warning" id="notes">
+                                    <i class="icon_ribbon_alt"></i>
+                                    <div class="media-body">
+                                        <p><strong>Note:</strong><br>Ad ogni chiusura gioco gli utenti che vorranno potranno scaricarsi il file di tutte giocate effettuate dagli utenti.</p>
+                                    </div>
+                                </blockquote>
+
+                            </article>
+
+
+                            <div class="border_bottom"></div>
+
+
+
+                            <article class="documentation_body shortcode_text doc-section" id="prizes">
+                                <div class="shortcode_title">
+                                    <h2>Montepremi</h2>
+                                </div>
+
+                                <div id="accordion">
+                                            <div class="card doc_accordion">
+                                                <div class="card-header" id="headingOne">
+                                                    <h5 class="mb-0" id="categories">
+                                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                            Prima categoria:<i class="icon_plus"></i><i class="icon_minus-06"></i>
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" style="">
+                                                    <div class="card-body toggle_body">
+                                                        Vincere indovinando tutti e 16 i risultati nel palinsesto. Se nessuno indovina tutti i risultati, il montepremi viene accumulato per la settimana successiva e si somma alle giocate della nuova settimana, fino a quando c'è un vincitore.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card doc_accordion">
+                                                <div class="card-header" id="headingTwo">
+                                                    <h5 class="mb-0" id="secondcat">
+                                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                            Seconda categoria<i class="icon_plus"></i><i class="icon_minus-06"></i>
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion" style="">
+                                                    <div class="card-body toggle_body">
+                                                        Indovinare 15 risultati su 16 nel palinsesto. Se nessuno indovina 15 risultati, il montepremi della seconda categoria va a chi indovina 14 risultati su 16. Se non c'è un vincitore nemmeno in questa situazione, la vincita viene assegnata a chi indovina 13 risultati. Se non c'è un vincitore nemmeno in questa situazione, la vincita viene assegnata a chi indovina 12 risultati.
+                                                        Se non c’e un vincitore nemmeno con i 12 Punti anche il montepremi del 15 verrà accumulato per la settimana successiva e si somma alle giocate della nuova settimana, fino a quando c'è un vincitore. 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card doc_accordion">
+                                                <div class="card-header" id="headingThree">
+                                                    <h5 class="mb-0" id="luckyrace">
+                                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                            Gara Settimanale Platinum:<i class="icon_plus"></i><i class="icon_minus-06"></i>
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion" style="">
+                                                    <div class="card-body toggle_body">
+                                                        Ogni settimana, oltre ai montepremi delle due categorie, è previsto un ulteriore montepremi esclusivo per gli utenti Platinum, Platinum1, Platinum2 e Platinum3. Questo montepremi sarà assegnato all'utente che totalizza più punti sommando i risultati delle 3 schede giocate.
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                </div>
+
+
+
+                                <div class="shortcode_info" id="distribution">
+                                    <h4 class="s_title">Distribuzione montepremi:</h4>
+
+                                    <p>Se ci sono più vincitori in una categoria, il montepremi è suddiviso equamente tra di loro. Inoltre, se un utente indovina tutti e 16 i risultati, partecipa anche alla suddivisione del montepremi per chi ha indovinato 15 risultati.</p>
+                                </div>
+                            
+
+                                <blockquote class="media notice notice-danger" id="notes2">
+                                    <i class="icon_ribbon_alt"></i>
+                                    <div class="media-body">
+                                        <p><strong>Note importanti:</strong><br>Se una partita viene annullata o rinviata di oltre 24 ore, il suo risultato sarà valido per tutti, tranne nel caso di più di 3 partite annullate o rinviate, in cui i montepremi verranno accumulati per la settimana successiva. L'eccezione è la Gara Settimanale Platinum, la cui verrà sempre assegnato il premio.<p><p>Tutti i montepremi e le classifiche saranno visibili dall’app e saranno aggiornati in real time, i totale dei montepremi si potranno anche vedere sull’indirizzo in blockchain che troverete sempre visibile sul sito.</p>
+                                    </div>
+                                </blockquote>
+
+                            </article>
+
+
+
+                            <div class="border_bottom"></div>
+
+
+                            <article class="documentation_body shortcode_text doc-section" id="plans">
+                                <div class="shortcode_title">
+                                    <h2>Piani di adesione</h2>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-12">
+                                        <div class="media documentation_item">
+                                            <div class="icon">
+                                                <img src="https://lucky16.ugames.app/assets/imgs/SILVER.png" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <h5>Silver</h5>
+                                                </a>
+                                                <p>5 USDT per 1 giocata settimanale</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-12">
+                                        <div class="media documentation_item">
+                                            <div class="icon">
+                                                <img src="https://lucky16.ugames.app/assets/imgs/GOLD.png" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <h5>Gold</h5>
+                                                </a>
+                                                <p>10 USDT per 2 giocate settimanale</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-12">
+                                        <div class="media documentation_item">
+                                            <div class="icon">
+                                                <img src="https://lucky16.ugames.app/assets/imgs/PLATINUM.png" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <h5>Platinum</h5>
+                                                </a>
+                                                <p>15 USDT per 3 giocate settimanale</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p>Inoltre per gli utenti con il pacchetto Platinum, c'è un montepremi settimanale extra. Questo montepremi è assegnato all'utente che ottiene più punti sommando i risultati delle tre giocate settimanali.<p>
+                                    <p>Ricorda che l'acquisto di uno dei pacchetti sopra ti consente di partecipare alle settimane di gioco previste e di effettuare le giocate necessarie per cercare di vincere i montepremi. Ogni pacchetto offre un numero diverso di giocate, quindi puoi scegliere in base alle tue preferenze e al livello di coinvolgimento che desideri avere nel gioco.</p>
+
+
+                            </article>
+
+
+
+                            <div class="border_bottom"></div>
+
+
+
+
+                            <article class="documentation_body shortcode_text doc-section" id="referal">
+                                <div class="shortcode_title">
+                                    <h2>Referal 7 livelli</h2>
+                                </div>
+
+
+                                <p>Agli utenti che si registrato e si abbonano ad un pacchetto e associata anche la possibilita di far business con il passaparola e portando a conoscenza del gioco altri utenti attraverso un proprio referal link all’interno del back office si puo condividere e far registrare altri.</p>
+
+                                <div class="shortcode_info">
+                                    <h4 class="s_title">Di seguito il piano compensi:</h4>
+
+
+                                    <div class="row align-items-center">
+                                        
+                                        <div class="col-12 col-xl-7">
+                                            <div class="table-responsive" style="width: 100%; max-width: 500px; text-align: center;">
+                                                <table class="table table_shortcode">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>% di guadagno</th>
+                                                            <th>Silver</th>
+                                                            <th>Gold</th>
+                                                            <th>Platinum</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>Livello 1</th>
+                                                            <td>6%</td>
+                                                            <td>6%</td>
+                                                            <td>6%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Livello 2</th>
+                                                            <td>5%</td>
+                                                            <td>5%</td>
+                                                            <td>5%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Livello 3</th>
+                                                            <td>0</td>
+                                                            <td>4%</td>
+                                                            <td>4%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Livello 4</th>
+                                                            <td>0</td>
+                                                            <td>3%</td>
+                                                            <td>3%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Livello 5</th>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>4%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Livello 6</th>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>5%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Livello 7</th>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>6%</td>
+                                                        </tr>
+                                                        
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-xl-5">
+                                            <div class="tour_preview_img wow fadeInRight" style="background-image: url(./luckyImg/network.png); height: 100%; min-height: 430px; background-size: cover;">
+                                               
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <p>Dalla tabella si evince che se un utente entra con la qualifica Silver ha un guadagno su 2 livelli di profondita’ cioe sulle persone registratosi con il proprio referal link e sulle persone registrate con referal link dei suoi diretti, e cosi di seguito se entrato come Gold avra un guadagno su 4 livelli se entrato da Platinum un guadagno su 7 livelli.</p>
+                                    <p>Il guadagno per singolo utente registrato nella propria struttura si puo vedere dalla tabella 
+                                    Il guadagno che si puo ottenere dalla condivisione di Lucky16 non ha limiti poiche uno potrebbe averne anche 100 in prima linea e cosi via il tutto va moltiplicato per la tabella sopra descritta in base all’entrata che avranno gli utenti in struttura.</p>
+
+
+                                </div>
+
+
+ 
+                            </article>
+
+
+
+                            <div class="border_bottom"></div>
+
+
+
+                            <article class="documentation_body shortcode_text doc-section" id="prelaunch">
+                                <div class="shortcode_title">
+                                    <h2>Prelancio Lucky16</h2>
+                                </div>
+                                <p>Il prelancio del progetto che parte il -------- permette a tutti di registrarsi scegliendo un piano   di iniziare a creare la propria rete e contemporaneamente avere in Airdrop dei token Lucky16 con il seguente programma come da tabella sotto:</p>
+
+                                <div class="row">
+
+                                    <div class="col-12 col-xl-6">
+                                        <div class="table-responsive" style="max-width: 900px; text-align: center;">
+                                            <table class="table table_shortcode">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Token airdrop</th>
+                                                        <th>Silver</th>
+                                                        <th>Gold</th>
+                                                        <th>Platinum</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Diretto</th>
+                                                        <td>500</td>
+                                                        <td>1000</td>
+                                                        <td>2000</td>
+                                                    <tr>
+                                                        <th>Livello 1</th>
+                                                        <td>300</td>
+                                                        <td>300</td>
+                                                        <td>300</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Livello 2</th>
+                                                        <td>250</td>
+                                                        <td>250</td>
+                                                        <td>250</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Livello 3</th>
+                                                        <td>0</td>
+                                                        <td>200</td>
+                                                        <td>200</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Livello 4</th>
+                                                        <td>0</td>
+                                                        <td>150</td>
+                                                        <td>150</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Livello 5</th>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>200</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Livello 6</th>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>250</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Livello 7</th>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>300</td>
+                                                    </tr>
+                                                    
+                                                </tbody>
+                                            </table>
+                                            <h5>* Sulle prime 30.000 adesioni</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-xl-6">
+                                        <p>Durante il prelancio ci sara anche una competizione che dara in premio ad i primi 16 altri token Lucky16 come da tabella:</p>
+                                        <ol>
+                                            <li>200.000 Token</li>
+                                            <li>100.000 Token</li>
+                                            <li>50.000   Token</li>
+                                            <li>40.000   Token</li>
+                                            <li>30.000   Token</li>
+                                        </ol>
+                                        <ul>
+                                            <li>Dal 6 al 10 - 20.000 Token</li>
+                                            <li>Dal 11 al 16- 10.000 Token</li>
+                                        </ul>
+
+                                        <p>I Punteggi della classifica si calcoleranno in base agli iscritti che l’utente fara personalmente con proprio referal e saranno calcolati in base all’adesione della persona inserita nel seguente modo:</p> 
+                                            <ul>
+                                                <li>Silver 1 PUNTO</li>
+                                                <li>Golden 2 PUNTI</li>
+                                                <li>Platinum 3 PUNTI</li>
+                                            </ul>
+                                            <p>La classifica sara aggiornata in real time sull’home page</p>
+
+                                    </div>
+
+                                </div>
+                                
+
+
+                            </article>
+        </section>
+        
+        <footer class="simple_footer text-center f_bg_color">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <p>© 2023 All Rights Reserved by <a href="index.html">Lucky16</a></p>
+                    </div>
+                    <div class="col-lg-6 text-right">
+                        <ul class="list-unstyled f_social_icon">
+                            <li style="background-size: contain; background-image: url(./luckyImg/telegram.png); background-repeat: no-repeat;"><a href="https://t.me/Lucky16app"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>   
+
+
+    </div>
+
+
+    <!-- Back to top button -->
+    <a id="back-to-top" title="Back to Top"></a>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/pre-loader.js"> </script>
+    <script src="assets/bootstrap/js/popper.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-select.min.js"></script>
+    <script src="js/parallaxie.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/anchor.js"></script>
+    <script src="assets/wow/wow.min.js"></script>
+    <script src="assets/prism/prism.js"></script>
+    <script src="assets/niceselectpicker/jquery.nice-select.min.js"></script>
+    <script src="assets/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/magnify-pop/jquery.magnific-popup.min.js"></script>
+    <script src="assets/tooltipster/js/tooltipster.bundle.min.js"></script>
+    <script src="assets/font-size/js/rv-jquery-fontsize-2.0.3.js"></script>
+    <script src="assets/video/video.min.js"></script>
+    <script src="assets/video/wistia.js"></script>
+    <script src="js/onpage-menu.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
