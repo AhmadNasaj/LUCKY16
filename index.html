@@ -6,6 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="https://lucky16.ugames.app/assets/icon/favicon.png" type="image/x-icon">
+        <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Add Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-select.min.css">
@@ -23,7 +30,6 @@
     <link rel="stylesheet" href="assets/mcustomscrollbar/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    
     <title>Lucky 16: Play, share and earn</title>
 </head>
 
@@ -164,11 +170,11 @@
                         </li>
                         <li class="nav-item dropdown submenu">
                             <div class="dropdown">
-                                <button class="dropbtn"> Italian</button>
+                                <button class="dropbtn">Italian</button>
                                 <div class="dropdown-content" id="myDropdown">
                                     <a href="./index.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP8AAACqCAMAAABVlWm8AAAACVBMVEUAkkb////OKzdsRJOSAAAAxklEQVR4nO3PMQEAAAjAILV/aFPsgwbMFLZwhaTv7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v75/+HwW0qVdTeFEnAAAAAElFTkSuQmCC" width="30px" height="20px" alt=""> Italian</a>
                                     <a href="./indexEnglish.html"><img src="data:image/png;base64,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" width="30px" height="20px" alt="">  English</a>
-                                    <a href="./indexspanish.html"><img src="data:image/png;base64,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" width="30px" height="20px" alt="">  Spanish</a>
+                                    <a href="./spain.html"><img src="data:image/png;base64,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" width="30px" height="20px" alt="">  Spanish</a>
                                 </div>
                             </div>
                         </li>
@@ -220,7 +226,7 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#plans" class="nav-link"><img src="img/side-nav/document.png" alt="">Piani di adesione</a>
+                                        <a href="#Membership" class="nav-link"><img src="img/side-nav/document.png" alt="">Piani di adesione</a>
                                         <span class="icon">
                                             <i class="icon_plus"></i>
                                             <i class="icon_minus-06"></i>
@@ -232,19 +238,17 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#referal" class="nav-link"><img src="img/side-nav/document2.png" alt="">Referal 7 livelli</a>
+                                        <a href="#referral" class="nav-link"><img src="img/side-nav/document2.png" alt="">Referal 7 livelli</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#presalaunch" class="nav-link"><img src="img/side-nav/book.png" alt="">Prelancio Lucky16</a>
+                                        <a href="# Pre-launch" class="nav-link"><img src="img/side-nav/book.png" alt="">Prelancio Lucky16</a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a href="#join" class="nav-link"><img src="img/side-nav/chat.png" alt="">Come accedere</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#ex1" class="nav-link"><img src="img/side-nav/chat1.png" alt="">Domande frequenti su Lucky16</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#ex1" class="nav-link"><img src="img/side-nav/chat.png" alt="">Come accedere</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#ex2" class="nav-link"><img src="img/side-nav/coding.png" alt="">Token LK16</a>
+                                        <a href="#TOKEN " class="nav-link"><img src="img/side-nav/coding.png" alt="">Token LK16</a>
                                         <span class="icon">
                                             <i class="icon_plus"></i>
                                             <i class="icon_minus-06"></i>
@@ -256,7 +260,10 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#ex3" class="nav-link"><img src="img/side-nav/support.png" alt="">Example Item 03</a>
+                                        <a href="#Airdrop" class="nav-link"><img src="img/side-nav/support.png" alt="">Example Item 03</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#asked" class="nav-link"><img src="img/side-nav/document2.png" alt="">Domande frequenti su Lucky16</a>
                                     </li>
                                 </ul>
                             </div>
@@ -268,13 +275,19 @@
                             <article class="documentation_body shortcode_text doc-section" id="cose">
                                 <div class="shortcode_title">
                                     <h2>Che cosa è Lucky 16</h2>
-                                    <p>La fortuna a portata di click!</p>
+                                    
                                 </div>
-                                <p>Lucky16 è più di un semplice gioco di calcio: è un'esperienza coinvolgente che ti permette di esprimere la tua passione per lo sport   del calcio e di vincere premi entusiasmanti. Indovina i risultati delle partite selezionate settimanalmente e immergiti nell'emozione del calcio come mai prima d'ora.</p>
-                                <p>Ma c'è di più. Con Lucky16, hai l'opportunità di condividere questa esperienza unica con gli altri e guadagnare. Il nostro programma di referenze ti consente di coinvolgere amici, familiari e altri appassionati di calcio, espandendo la tua rete e guadagnando premi in denaro. Diventa un vero ambasciatore  e condividi l'emozione con gli altri.</p>
-                                <p>E c'è un altro aspetto che rende Lucky16 ancora più sorprendente: la tecnologia Web3 decentralizzata. La piattaforma è alimentata dalla blockchain, il che significa che tutto è trasparente e sicuro. I  premi sono immutabilmente registrati sulla blockchain, garantendo equità e sicurezza per tutti i partecipanti.</p>
-                                <p>Ma non è tutto. Con il nostro token di utilità LK16, puoi sfruttare appieno l'esperienza di Lucky16. Il token ti offre accesso a funzionalità esclusive, premi aggiuntivi e molto altro ancora. È la chiave per sbloccare opportunità uniche nella piattaforma e per rendere la tua esperienza ancora più gratificante.</p>
-                                <p>In breve, Lucky16 non è solo un gioco di calcio, ma un modo per vivere il calcio, vincere premi e connettersi con altri appassionati. Porta la tua passione per il calcio a un livello superiore, coinvolgi amici e familiari, goditi la tecnologia decentralizzata e sfrutta il potere del token LK16. Unisciti a noi in questa avventura, sfida il tuo istinto sportivo e scopri quanto può essere entusiasmante vincere su Lucky16.</p>
+
+                                <div class="alert alert-primary" role="alert">
+                                    <p>La fortuna a portata di click!</p>
+                                    <p>Lucky16 è più di un semplice gioco di calcio: è un'esperienza coinvolgente che ti permette di esprimere la tua passione per lo sport   del calcio e di vincere premi entusiasmanti. Indovina i risultati delle partite selezionate settimanalmente e immergiti nell'emozione del calcio come mai prima d'ora.</p>
+                                    <p>Ma c'è di più. Con Lucky16, hai l'opportunità di condividere questa esperienza unica con gli altri e guadagnare. Il nostro programma di referenze ti consente di coinvolgere amici, familiari e altri appassionati di calcio, espandendo la tua rete e guadagnando premi in denaro. Diventa un vero ambasciatore  e condividi l'emozione con gli altri.</p>
+                                    <p>E c'è un altro aspetto che rende Lucky16 ancora più sorprendente: la tecnologia Web3 decentralizzata. La piattaforma è alimentata dalla blockchain, il che significa che tutto è trasparente e sicuro. I  premi sono immutabilmente registrati sulla blockchain, garantendo equità e sicurezza per tutti i partecipanti.</p>
+                                    <p>Ma non è tutto. Con il nostro token di utilità LK16, puoi sfruttare appieno l'esperienza di Lucky16. Il token ti offre accesso a funzionalità esclusive, premi aggiuntivi e molto altro ancora. È la chiave per sbloccare opportunità uniche nella piattaforma e per rendere la tua esperienza ancora più gratificante.</p>
+                                    <p>In breve, Lucky16 non è solo un gioco di calcio, ma un modo per vivere il calcio, vincere premi e connettersi con altri appassionati. Porta la tua passione per il calcio a un livello superiore, coinvolgi amici e familiari, goditi la tecnologia decentralizzata e sfrutta il potere del token LK16. Unisciti a noi in questa avventura, sfida il tuo istinto sportivo e scopri quanto può essere entusiasmante vincere su Lucky16.</p>
+                            </div>
+                                  
+                                
                             </article>
 
 
@@ -286,23 +299,36 @@
                                     <h2>Regole del gioco</h2>
                                 </div>
 
-                                <div class="shortcode_info" id="weekly">
-                                    <h4 class="s_title">Partite Settimanali:</h4>
-
-                                    <p>Ogni settimana, verranno proposti 16 incontri di calcio. Ogni partita avrà tre possibili esiti: "1" indica la vittoria della squadra di casa, "2" indica la vittoria della squadra ospite e "X" indica un pareggio. La squadra di casa è quella a sinistra nella scheda, mentre quella ospite è a destra. </p>
-                                </div>
-
-                                <div class="shortcode_info" id="pals">
-                                    <h4 class="s_title">Pubblicazione del palinsesto:</h4>
-                                        
-                                    <p>Il programma degli incontri sarà pubblicato almeno 4 giorni prima del primo incontro. Verranno assegnati casualmente tutti e 16 i risultati. In questo periodo, gli utenti possono modificare i pronostici per ciascuna partita fino a 2 ore prima dell'inizio del primo incontro.</p>
-                                </div>
-
-                                <div class="shortcode_info" id="guess">
-                                    <h4 class="s_title">Modifica dei Pronostici: </h4>
-                                    <p>Spetta all'utente accedere e modificare i risultati delle partite secondo le proprie previsioni. Se l'utente non apporta modifiche entro la chiusura del gioco, parteciperà comunque al concorso con i risultati assegnati casualmente.</p>
-                                </div>
-
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                      <a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Partite Settimanali</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Pubblicazione del palinsesto</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Modifica dei Pronostici</a>
+                                      </li>
+                                    <!-- Add more tabs as needed -->
+                                  </ul>
+                                  
+                                  <div class="tab-content" id="myTabContent">
+                                    <br>
+                                    <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                                        p>Ogni settimana, verranno proposti 16 incontri di calcio. Ogni partita avrà tre possibili esiti: "1" indica la vittoria della squadra di casa, "2" indica la vittoria della squadra ospite e "X" indica un pareggio. La squadra di casa è quella a sinistra nella scheda, mentre quella ospite è a destra. </p>
+                                    </div>
+                                    
+                                    <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                                        <p>Il programma degli incontri sarà pubblicato almeno 4 giorni prima del primo incontro. Verranno assegnati casualmente tutti e 16 i risultati. In questo periodo, gli utenti possono modificare i pronostici per ciascuna partita fino a 2 ore prima dell'inizio del primo incontro.</p>
+                                    </div>
+                                    
+                                    <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+                                        <p>Spetta all'utente accedere e modificare i risultati delle partite secondo le proprie previsioni. Se l'utente non apporta modifiche entro la chiusura del gioco, parteciperà comunque al concorso con i risultati assegnati casualmente.</p>
+                                    </div>
+                                    <!-- Add more tab content as needed -->
+                                  </div>
+                                  <br>
+                               
                                 <blockquote class="media notice notice-warning">
                                     <i class="icon_ribbon_alt"></i>
                                     <div class="media-body">
@@ -317,8 +343,8 @@
 
 
 
-                            <article class="documentation_body shortcode_text doc-section" id="shortcodes">
-                                <div class="shortcode_title">
+                            <article class="documentation_body shortcode_text doc-section" id="prizes">
+                                <div class="shortcode_title" >
                                     <h2>Montepremi</h2>
                                 </div>
 
@@ -341,7 +367,7 @@
                                                 <div class="card-header" id="headingTwo">
                                                     <h5 class="mb-0">
                                                         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                                            Seconda categoria<i class="icon_plus"></i><i class="icon_minus-06"></i>
+                                                            Seconda categoria:<i class="icon_plus"></i><i class="icon_minus-06"></i>
                                                         </button>
                                                     </h5>
                                                 </div>
@@ -392,7 +418,7 @@
                             <div class="border_bottom"></div>
 
 
-                            <article class="documentation_body shortcode_text doc-section" id="shortcodes">
+                            <article class="documentation_body shortcode_text doc-section" id="Membership">
                                 <div class="shortcode_title">
                                     <h2>Piani di adesione</h2>
                                 </div>
@@ -405,9 +431,10 @@
                                             </div>
                                             <div class="media-body">
                                                 <a href="#">
-                                                    <h5>Silver</h5>
+                                                    <h5>Coccinella</h5>
                                                 </a>
-                                                <p>5 USDT per 1 giocata settimanale</p>
+                                                <p>Con l'acquisto del pacchetto Silver , l'utente ottiene il diritto di partecipare a 4 settimane di gioco.
+                                                In ogni settimana, l'utente ha diritto a fare una giocata per indovinare i risultati delle partite.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -419,9 +446,10 @@
                                             </div>
                                             <div class="media-body">
                                                 <a href="#">
-                                                    <h5>Gold</h5>
+                                                    <h5>Gufo</h5>
                                                 </a>
-                                                <p>10 USDT per 2 giocate settimanale</p>
+                                                Con l'acquisto del pacchetto Gold, l'utente ottiene il diritto di partecipare a 4 settimane di gioco. 
+                                                In ogni settimana   l'utente ha diritto a fare due giocate per indovinare i risultati delle partite.
                                             </div>
                                         </div>
                                     </div>
@@ -433,17 +461,26 @@
                                             </div>
                                             <div class="media-body">
                                                 <a href="#">
-                                                    <h5>Platinum</h5>
+                                                    <h5>Lucky</h5>
                                                 </a>
-                                                <p>15 USDT per 3 giocate settimanale</p>
+                                                Con l'acquisto del pacchetto Platinum, l'utente ottiene il diritto di partecipare a 4 settimane di gioco. 
+                                                In ogni settimana   l'utente ha diritto a fare tre giocate per indovinare i risultati delle partite.
+                                                Inoltre per gli utenti con il pacchetto Platinum, c'è un montepremi settimanale extra. 
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <p>Inoltre per gli utenti con il pacchetto Platinum, c'è un montepremi settimanale extra. Questo montepremi è assegnato all'utente che ottiene più punti sommando i risultati delle tre giocate settimanali.<p>
-                                    <p>Ricorda che l'acquisto di uno dei pacchetti sopra ti consente di partecipare alle settimane di gioco previste e di effettuare le giocate necessarie per cercare di vincere i montepremi. Ogni pacchetto offre un numero diverso di giocate, quindi puoi scegliere in base alle tue preferenze e al livello di coinvolgimento che desideri avere nel gioco.</p>
+                                <blockquote class="media notice notice-warning">
+                                    <i class="icon_ribbon_alt"></i>
+                                    <div class="media-body">
+                                        <p>Questo montepremi è assegnato all'utente che ottiene più punti sommando i risultati delle tre giocate settimanali.<p>
+                                        <p>Ricorda che l'acquisto di uno dei pacchetti sopra ti consente di partecipare alle settimane di gioco previste e di effettuare le giocate necessarie per cercare di vincere i montepremi. Ogni pacchetto offre un numero diverso di giocate, quindi puoi scegliere in base alle tue preferenze e al livello di coinvolgimento che desideri avere nel gioco.</p>
+        
+                                    </div>
+                                </blockquote>
 
+                               
 
                             </article>
 
@@ -454,7 +491,7 @@
 
 
 
-                            <article class="documentation_body shortcode_text doc-section" id="shortcodes">
+                            <article class="documentation_body shortcode_text doc-section" id="referral">
                                 <div class="shortcode_title">
                                     <h2>Referal 7 livelli</h2>
                                 </div>
@@ -462,6 +499,7 @@
 
                                 <p>Agli utenti che si registrato e si abbonano ad un pacchetto e associata anche la possibilita di far business con il passaparola e portando a conoscenza del gioco altri utenti attraverso un proprio referal link all’interno del back office si puo condividere e far registrare altri.</p>
 
+                                
                                 <div class="shortcode_info">
                                     <h4 class="s_title">Di seguito il piano compensi:</h4>
 
@@ -542,6 +580,7 @@
 
 
                                 </div>
+                                
 
 
  
@@ -553,12 +592,12 @@
 
 
 
-                            <article class="documentation_body shortcode_text doc-section" id="shortcodes">
+                            <article class="documentation_body shortcode_text doc-section" id=" Pre-launch">
                                 <div class="shortcode_title">
                                     <h2>Prelancio Lucky16</h2>
                                 </div>
                                 <p>Il prelancio del progetto che parte il -------- permette a tutti di registrarsi scegliendo un piano   di iniziare a creare la propria rete e contemporaneamente avere in Airdrop dei token Lucky16 con il seguente programma come da tabella sotto:</p>
-
+                                <br>
                                 <div class="row">
 
                                     <div class="col-12 col-xl-6">
@@ -574,48 +613,48 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <th>Diretto</th>
+                                                        <th>Direct</th>
                                                         <td>500</td>
                                                         <td>1000</td>
                                                         <td>2000</td>
                                                     <tr>
-                                                        <th>Livello 1</th>
+                                                        <th>Level 1</th>
                                                         <td>300</td>
                                                         <td>300</td>
                                                         <td>300</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Livello 2</th>
+                                                        <th>Level 2</th>
                                                         <td>250</td>
                                                         <td>250</td>
                                                         <td>250</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Livello 3</th>
+                                                        <th>Level 3</th>
                                                         <td>0</td>
                                                         <td>200</td>
                                                         <td>200</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Livello 4</th>
+                                                        <th>Level 4</th>
                                                         <td>0</td>
                                                         <td>150</td>
                                                         <td>150</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Livello 5</th>
+                                                        <th>Level 5</th>
                                                         <td>0</td>
                                                         <td>0</td>
                                                         <td>200</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Livello 6</th>
+                                                        <th>Level 6</th>
                                                         <td>0</td>
                                                         <td>0</td>
                                                         <td>250</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Livello 7</th>
+                                                        <th>Level 7</th>
                                                         <td>0</td>
                                                         <td>0</td>
                                                         <td>300</td>
@@ -623,7 +662,7 @@
                                                     
                                                 </tbody>
                                             </table>
-                                            <h5>* Sulle prime 30.000 adesioni</h5>
+                                            <h5>* On the first 30,000 registrations</h5>
                                         </div>
                                     </div>
 
@@ -637,64 +676,268 @@
                                             <li>30.000   Token</li>
                                         </ol>
                                         <ul>
-                                            <li>Dal 6 al 10 - 20.000 Token</li>
-                                            <li>Dal 11 al 16- 10.000 Token</li>
+                                            <li>Dal 6th to 10th-   20.000 Tokens</li>
+                                            <li>Dal 11th to 16th- 10.000 Tokens</li>
                                         </ul>
 
-                                        <p>I Punteggi della classifica si calcoleranno in base agli iscritti che l’utente fara personalmente con proprio referal e saranno calcolati in base all’adesione della persona inserita nel seguente modo:</p> 
-                                            <ul>
-                                                <li>Silver 1 PUNTO</li>
-                                                <li>Golden 2 PUNTI</li>
-                                                <li>Platinum 3 PUNTI</li>
-                                            </ul>
-                                            <p>La classifica sara aggiornata in real time sull’home page</p>
+                                           
+                                            
 
                                     </div>
 
                                 </div>
-                                
+                                <br>
+                                <br>
+                                <div class="row">
+                                    <div class="col-12 col-xl-6">
+                                        <p>I Punteggi della classifica si calcoleranno in base agli iscritti che l’utente fara personalmente con proprio referal e saranno calcolati in base all’adesione della persona inserita nel seguente modo:</p> 
+                                        <p>La classifica sara aggiornata in real time sull’home page </p>
+                                    </div>
+                                    <div class="col-12 col-xl-6">
+                                        <table class="table table-dark">
+                                            
+                                            <tbody>
+                                                
+                                                    
+                                                    
+                                                <tr>
+                                                    <th> 1</th>
+                                                    <td>Coccinella 1 PUNTO</td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <th> 2</th>
+                                                    <td>Gufo 2 PUNTI</td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <th> 3</th>
+                                                    <td>Lucky 3 PUNTI</td>
+                                                    
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <th> 4</th>
+                                                    <td>Lucky Annual 5 Punti</td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <th> 5</th>
+                                                    <td>Lucky 1 Annual 10 Punti</td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <th> 6</th>
+                                                    <td>Lucky 2 Annual 25 Punti</td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <th> 7</th>
+                                                    <td>Lucky 3 Annual 50 Punti</td>
+                                                    
+                                                </tr>
+                                                
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                    
+                                </div>
 
 
                             </article>
                             
+                            
                             <div class="border_bottom"></div>
-
-
-                            <article class="documentation_body shortcode_text doc-section" id="cose">
+                            <article class="documentation_body shortcode_text doc-section" id="join">
                                 <div class="shortcode_title">
-                                    <h2>Domande frequenti su Lucky16</h2>
+                                    <h2>COME ACCEDERE:</h2>
                                     
                                 </div>
-                                <p><b> Cos'è Lucky16? </b>Lucky16 è un coinvolgente gioco di pronostici sportivi basato su eventi calcistici. Gli utenti cercano di indovinare i risultati di 16 partite per vincere premi in denaro.</p>
-                                <p><b>Come posso partecipare? </b> Puoi partecipare scegliendo uno dei pacchetti d'ingresso: Lady Bug, Owl o Lucky. Ogni pacchetto offre un numero diverso di giocate e opportunità di vincita.</p>
-                                <p><b>Come funziona il gioco?</b> Ogni settimana ci sono 16 partite nel palinsesto. Devi pronosticare il risultato di ciascuna partita, scegliendo tra 1, X o 2. </p>
-                                <p><b>Cosa succede se indovino tutti i risultati?</b> Se indovini tutti e 16 i risultati, vinci la categoria principale del montepremi. Se nessuno vince, il montepremi si accumula per la settimana successiva.</p>
-                                <p><b>Quali premi posso vincere?</b>  I premi variano a seconda del numero di risultati indovinati. Ci sono premi per la categoria principale (16 risultati indovinati) e premi per la categoria secondaria (15 risultati indovinati).</p>
-                                
-                                <p><b>Posso guadagnare coinvolgendo altri giocatori?</b> Sì, puoi guadagnare coinvolgendo altri giocatori tramite il piano di referral a sette livelli. Otterrai una percentuale di guadagno tramite il tuo referral link.</p>
-                                <p> <b>Cosa succede se una partita viene annullata o rinviata?</b> Se una partita viene annullata o rinviata entro 24 ore, il risultato sara’ corretto per tutti indifferentemente dal segno scelto rimarrà valido. Tuttavia, se ci sono più di 4 partite annullate o rinviate, i montepremi vengono accumulati per la settimana successiva, ad eccezione della Gara Settimanale Platinum.</p>
-                                <p><b>Cos'è la Gara Settimanale Platinum?</b>  La Gara Settimanale Platinum è un montepremi riservato agli utenti con qualifica Platinum e superiori. Viene assegnato all'utente con il punteggio totale più alto ottenuto dalla somma delle  3 schede giocate. </p>
-                                <p><b>Come posso iniziare?</b>  Scegli il pacchetto che preferisci e inizia a partecipare ai pronostici sportivi per avere l'opportunità di vincere premi e divertirti.</p>
-                                <p><b>Posso cambiare i miei pronostici dopo averli inviati?</b>  Sì, puoi modificare i pronostici fino a 2 ore prima dell'inizio della prima partita nel palinsesto. Basta accedere al tuo account e apportare le modifiche desiderate.</p>
-                                <p> <b>Come avviene la suddivisione dei premi tra i vincitori?</b> I premi vengono suddivisi tra i vincitori in base alle categorie principale e secondaria. Se ci sono più vincitori, i premi vengono equamente divisi tra di loro.</p>
-                                <p><b>Cosa posso fare con il token utility LK16?</b>  Il token LK16 può essere utilizzato all'interno della piattaforma per scalare le qualifiche Lucky 1 stella 2 stelle e 3 stelle. Con i token LK16 ottini inoltre un dividendo sugli utili della piattaforma.</p>
-                                <p><b>Quali vantaggi offre la tecnologia Web3?</b>  La tecnologia Web3 garantisce la sicurezza dei dati e delle transazioni, assicurando un'esperienza di gioco sicura e affidabile. Inoltre, la decentralizzazione migliora la trasparenza e la fiducia.</p>
-                                <p> <b>Come posso iscrivermi alla Gara Settimanale Platinum?</b> Se hai una qualifica Platinum o superiore, parteciperai automaticamente alla Gara Settimanale Platinum. I punteggi delle tue giocate saranno sommati per determinare il vincitore.</p>
-                                <p><b>Come posso monitorare i miei guadagni e i miei punteggi? </b> Il tuo pannello di controllo personale ti fornirà informazioni dettagliate sui tuoi guadagni, punteggi e referal. Potrai tenere traccia dei tuoi progressi in tempo reale.</p>
-                                <p><b>Posso giocare da qualsiasi parte del mondo?</b>  Sì, Lucky16 è accessibile da qualsiasi parte del mondo. </p>
-                                <p> <b>Come posso prelevare i miei guadagni?</b> Potrai prelevare i tuoi guadagni direttamente sul tuo wallet decentralizzato che hai utilizzato per registrarti.</p>
-                                <p><b>Cosa succede se nessuno indovina tutti i risultati di una settimana?</b>  Se nessun giocatore indovina tutti i 16 risultati del palinsesto, il montepremi viene accumulato per la settimana successiva, rendendo il gioco ancora più interessante.</p>
-                                <p><b>Posso partecipare a Lucky16 da dispositivi mobili?</b>  Assolutamente sì! Lucky16 è ottimizzato per dispositivi mobili, consentendoti di partecipare e divertirti ovunque tu sia.
-                                </p>
-                                <p><b>C'è un limite al numero di persone che posso referire?</b> Nessun limite! Puoi referire quante persone desideri.</p>
-                                <p><b>Come posso iniziare a giocare a Lucky16?</b> È facile! Basta registrarsi tramite il link di invito e scegliere uno dei pacchetti d'ingresso e iniziare a fare le tue giocate. Non c'è bisogno di competenze particolari, solo la tua passione per il gioco.</p>
-                                <p> <b>Come posso tenere traccia dei miei progressi e delle mie giocate?</b> Il tuo account personale su Lucky16 ti consente di monitorare le tue giocate passate, i risultati ottenuti e i premi guadagnati. Tutto è a portata di clic!</p>
-                                <p><b>Lucky16 è adatto a tutti?</b>  Assolutamente! Lucky16 è pensato per gli amanti dello sport e del gioco, offrendo un'esperienza coinvolgente e premi eccitanti. Che tu sia un principiante o un esperto, c'è spazio per tutti nel nostro mondo del divertimento e delle possibilità di guadagno.</p>
+                                  <blockquote class="media notice notice-success">
+                                    <i class="icon_ribbon_alt"></i>
+                                    <div class="media-body">
+                                    <p>-E possibile registrarsi solo tramite link di invito o codice sponsor e tramite un wallet decentralizzato tipo metamask o Trust Wallet</p>
+                                    <p>-Illustrazione come collegarsi con wallet connect ( ti faro avere io dei video che illustrano come potersi registrare tramite i Wallet)</p>
+                                    </div>
+                                </blockquote>
                                 
                             </article>
+                            <div class="border_bottom"></div>
 
+                            <article class="documentation_body shortcode_text text-warning doc-section" id="TOKEN">
+                                <div class="shortcode_title">
+                                    <h2>TOKEN LK16 :</h2>
+                                    
+                                </div>
+                                <blockquote class="media notice notice-warning">
+                                  <ul>
+                                    <li>Link contartto:  https://bscscan.com/token/0x6cCD52e63BfdD09aA3AAf78FE76e05c16A71b86B</li>
+                                    <li>Fornitura totale 1.000.000.000</li>
+                                    <li>Vantaggi per Holder (Lucky 1 - Lucky 2 e 3 stelle) Dividendo utili </li>
+                                    <li>Presale Airdrop max. 340.000.000 prezzo per token 0.012 $ (offerta pack bundle)</li>
+                                    <li>Inserimento in exchange prezzo quotazione 0.015 $</li>
+                                  </ul> 
+                                </blockquote>
+                                <h2>Airdrop Special Pack</h2>
+                                <table class="table table-striped table-dark">
+                                    <thead>
+                                     
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">1</th>
+                                        <td>Patinum Annual 195$ 5.000 token e 52 settimane di gioco incluse</td>
+                                       
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2</th>
+                                        <td>Platinum1 costo 1.290 $ 150.000 token e 52 settimane di gioco incluse</td>
+                                       
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">3</th>
+                                        <td>Platinum2 costo 2.990 $ 400.000 token e 52 settimane di gioco incluse</td>
+                                      </tr>
+
+                                      <tr>
+                                        <th scope="row">4</th>
+                                        <td>Platinum3 costo 7.190 $ 1.000.000 token e 52 settimane di gioco incluse</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </article>
 
                             <div class="border_bottom"></div>
+
+                            <article class="documentation_body shortcode_text doc-section" id="Airdrop">
+                                <div class="shortcode_title">
+                                    <h2>16 settimane di gioco airdrop token</h2>
+                                    
+                                </div>
+                                 <p>Durante le prime 16 settimane gli utenti registrati con un pacchetto minimo da 5$ parteciperanno al gioco Lucky16 gratuitamente e premiera i migliori in token. </p>
+                                <div id="accordion">
+                                    <div class="card doc_accordion">
+                                        <div class="card-header" id="heading4">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                                    Classifica 1 scheda:<i class="icon_plus"></i><i class="icon_minus-06"></i>
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapse4" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" style="">
+                                            <div class="card-body toggle_body">
+                                                Il migliori 10 che faranno piu punti su una singola scheda riceveranno i seguenti premi:     
+                                                <ul>
+                                                    <li>1° 10.000 token</li>
+                                                    <li>2° 4.000 Token</li>
+                                                    <li>3° 2.000 Token</li>
+                                                    <li>4-10° 500 Token</li>
+                                                </ul>                                       
+                                            </div>
+                                        </div>
+                                    </div>    
+                                    <div class="card doc_accordion">
+                                        <div class="card-header" id="heading5">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                                                    Classifica 2 schede<i class="icon_plus"></i><i class="icon_minus-06"></i>
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapse5" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion" style="">
+                                            <div class="card-body toggle_body">
+                                                Il migliori 10 che faranno piu punti sommando le 2 schede riceveranno i seguenti premi:
+                                                <ul>
+                                                    <li>1° 20.000 token</li>
+                                                    <li>2° 8.000 Token</li>
+                                                    <li>3°  4.000 Token</li>
+                                                    <li>4-10°  1.000 Token</li>
+                                                </ul> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card doc_accordion">
+                                        <div class="card-header" id="heading6">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                                                    Classifica 3 schede:<i class="icon_plus"></i><i class="icon_minus-06"></i>
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapse6" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" style="">
+                                            <div class="card-body toggle_body">
+                                                Il migliori 10 che faranno piu punti sommando le 3 schede riceveranno i seguenti premi:
+                                                <ul>
+                                                    <li>1° 50.000 token</li>
+                                                    <li>2° 16.000 Token</li>
+                                                    <li>3°  8.000 Token</li>
+                                                    <li>4-10°  2.000 Token</li>
+                                                </ul>
+                                                Se ci sono utenti con stesso punteggio i premi verranno suddivisi tra i vincitori.
+                                            </div>
+                                        </div>
+                                    </div>     
+                                </div>
+                            </article>
+
+                            <div class="border_bottom"></div>
+
+
+                            <article class="documentation_body shortcode_text doc-section" id="asked">
+                                <div class="shortcode_title">
+                                    <h2>Frequently asked questions about Lucky16</h2>
+                                    
+                                </div>
+
+                                <div class="alert alert-primary" role="alert">
+                                    <p><b>1. Cos'è Lucky16? </b>Lucky16 è un coinvolgente gioco di pronostici sportivi basato su eventi calcistici. Gli utenti cercano di indovinare i risultati di 16 partite per vincere premi in denaro.</p>
+                                <p><b>2.Come posso partecipare? </b> Puoi partecipare scegliendo uno dei pacchetti d'ingresso: Lady Bug, Owl o Lucky. Ogni pacchetto offre un numero diverso di giocate e opportunità di vincita.</p>
+                                <p><b>3.Come funziona il gioco?</b> Ogni settimana ci sono 16 partite nel palinsesto. Devi pronosticare il risultato di ciascuna partita, scegliendo tra 1, X o 2. </p>
+                                
+                                    
+                                  </div>
+                                  <div class="alert alert-danger" role="alert">
+                                    <p><b>4.Cosa succede se indovino tutti i risultati?</b> Se indovini tutti e 16 i risultati, vinci la categoria principale del montepremi. Se nessuno vince, il montepremi si accumula per la settimana successiva.</p>
+                                    <p><b>5.Quali premi posso vincere?</b>  I premi variano a seconda del numero di risultati indovinati. Ci sono premi per la categoria principale (16 risultati indovinati) e premi per la categoria secondaria (15 risultati indovinati).</p>
+                                    
+                                    <p><b>6.Posso guadagnare coinvolgendo altri giocatori?</b> Sì, puoi guadagnare coinvolgendo altri giocatori tramite il piano di referral a sette livelli. Otterrai una percentuale di guadagno tramite il tuo referral link.</p>
+                                    
+                                  </div>
+                                  <div class="alert alert-info" role="alert">
+                                    <p><b>7.What happens if a match is canceled or postponed?</b>If a match is canceled or postponed within 24 hours, the result will be correct for everyone regardless of the sign chosen and will remain valid. However, if there are more than 4 canceled or postponed games, the prize pools are rolled over for the following week, with the exception of the Platinum Weekly Race.</p>
+                                    <p><b>8.What is the Platinum Weekly Race?</b>The Platinum Weekly Race is a prize pool reserved for users with Platinum qualification and above. It is awarded to the user with the highest total score obtained from the sum of the 3 cards played.</p>
+                                    <p><b>9.How can I get started?</b>Choose the package you prefer and start participating in sports predictions for the opportunity to win prizes and have fun.</p>
+                                    
+                                  </div>
+                                  <div class="alert alert-warning" role="alert">
+                                    <p><b>10.Posso cambiare i miei pronostici dopo averli inviati?</b>  Sì, puoi modificare i pronostici fino a 2 ore prima dell'inizio della prima partita nel palinsesto. Basta accedere al tuo account e apportare le modifiche desiderate.</p>
+                                <p> <b>11.Come avviene la suddivisione dei premi tra i vincitori?</b> I premi vengono suddivisi tra i vincitori in base alle categorie principale e secondaria. Se ci sono più vincitori, i premi vengono equamente divisi tra di loro.</p>
+                                <p><b>12.Cosa posso fare con il token utility LK16?</b>  Il token LK16 può essere utilizzato all'interno della piattaforma per scalare le qualifiche Lucky 1 stella 2 stelle e 3 stelle. Con i token LK16 ottini inoltre un dividendo sugli utili della piattaforma.</p>
+                                    </p>
+                                  </div>
+                                  <div class="alert alert-dark" role="alert">
+                                    <p><b>13.Quali vantaggi offre la tecnologia Web3?</b>  La tecnologia Web3 garantisce la sicurezza dei dati e delle transazioni, assicurando un'esperienza di gioco sicura e affidabile. Inoltre, la decentralizzazione migliora la trasparenza e la fiducia.</p>
+                                <p> <b>14.Come posso iscrivermi alla Gara Settimanale Platinum?</b> Se hai una qualifica Platinum o superiore, parteciperai automaticamente alla Gara Settimanale Platinum. I punteggi delle tue giocate saranno sommati per determinare il vincitore.</p>
+                                <p><b>15.Come posso monitorare i miei guadagni e i miei punteggi? </b> Il tuo pannello di controllo personale ti fornirà informazioni dettagliate sui tuoi guadagni, punteggi e referal. Potrai tenere traccia dei tuoi progressi in tempo reale.</p>
+                                  </div>
+                                  <div class="alert alert-success" role="alert">
+                                    <p><b>16.Posso giocare da qualsiasi parte del mondo?</b>  Sì, Lucky16 è accessibile da qualsiasi parte del mondo. </p>
+                                    <p> <b>17.Come posso prelevare i miei guadagni?</b> Potrai prelevare i tuoi guadagni direttamente sul tuo wallet decentralizzato che hai utilizzato per registrarti.</p>
+                                    <p><b>18.Cosa succede se nessuno indovina tutti i risultati di una settimana?</b>  Se nessun giocatore indovina tutti i 16 risultati del palinsesto, il montepremi viene accumulato per la settimana successiva, rendendo il gioco ancora più interessante.</p>
+                                  </div>
+                                  <div class="alert alert-secondary" role="alert">
+                                    <p><b>19.Posso partecipare a Lucky16 da dispositivi mobili?</b>  Assolutamente sì! Lucky16 è ottimizzato per dispositivi mobili, consentendoti di partecipare e divertirti ovunque tu sia.
+                                    </p>
+                                    <p><b>20.C'è un limite al numero di persone che posso referire?</b> Nessun limite! Puoi referire quante persone desideri.</p>
+                                    <p><b>21.Come posso iniziare a giocare a Lucky16?</b> È facile! Basta registrarsi tramite il link di invito e scegliere uno dei pacchetti d'ingresso e iniziare a fare le tue giocate. Non c'è bisogno di competenze particolari, solo la tua passione per il gioco.</p>
+                                    
+                                  </div>
+                                  <div class="alert alert-warning" role="alert">
+                                    <p> <b>22.Come posso tenere traccia dei miei progressi e delle mie giocate?</b> Il tuo account personale su Lucky16 ti consente di monitorare le tue giocate passate, i risultati ottenuti e i premi guadagnati. Tutto è a portata di clic!</p>
+                                    <p><b>23.Lucky16 è adatto a tutti?</b>  Assolutamente! Lucky16 è pensato per gli amanti dello sport e del gioco, offrendo un'esperienza coinvolgente e premi eccitanti. Che tu sia un principiante o un esperto, c'è spazio per tutti nel nostro mondo del divertimento e delle possibilità di guadagno.</p>
+                                    
+                                  </div>
+                            </article>
         </section>
         
         <footer class="simple_footer text-center f_bg_color">
